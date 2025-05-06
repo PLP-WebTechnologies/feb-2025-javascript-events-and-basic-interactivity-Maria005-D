@@ -1,0 +1,136 @@
+/* General Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #f0f8ff, #e0f7fa);
+    padding: 20px;
+    color: #333;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+/* Hover Box */
+#hoverDiv {
+    width: 250px;
+    height: 120px;
+    background-color: #d3d3d3;
+    text-align: center;
+    line-height: 120px;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+/* Form Section */
+#form-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form label {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+#form input {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+#form input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Image Gallery */
+#image-gallery {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#galleryImg {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #4CAF50;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+}
+
+#galleryImg:hover {
+    transform: scale(1.03);
+}
+
+/* Keypress Section */
+#keypressInput {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+#keypressInput:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #hoverDiv,
+    #galleryImg {
+        width: 90%;
+        height: auto;
+    }
+
+    #keypressInput {
+        width: 100%;
+    }
+
+    button {
+        width: 90%;
+    }
+
+    #form-section {
+        width: 100%;
+        padding: 15px;
+    }
+}
